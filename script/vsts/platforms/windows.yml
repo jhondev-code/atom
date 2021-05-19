@@ -19,7 +19,7 @@ jobs:
     variables:
       AppName: $[ dependencies.GetReleaseVersion.outputs['Version.AppName'] ]
       ReleaseVersion: $[ dependencies.GetReleaseVersion.outputs['Version.ReleaseVersion'] ]
-      IsReleaseBranch: true
+      IsReleaseBranch: false
       IsSignedZipBranch: true
 
     steps:
@@ -89,7 +89,7 @@ jobs:
     variables:
       AppName: $[ dependencies.GetReleaseVersion.outputs['Version.AppName'] ]
       ReleaseVersion: $[ dependencies.GetReleaseVersion.outputs['Version.ReleaseVersion'] ]
-      IsReleaseBranch: true
+      IsReleaseBranch: false
       IsSignedZipBranch: true
 
     steps:

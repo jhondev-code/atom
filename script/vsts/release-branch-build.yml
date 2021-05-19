@@ -30,7 +30,7 @@ jobs:
 
     variables:
       ReleaseVersion: $[ dependencies.GetReleaseVersion.outputs['Version.ReleaseVersion'] ]
-      IsReleaseBranch: true
+      IsReleaseBranch: false
       IsSignedZipBranch: true
 
     steps:
